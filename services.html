@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crafted Creations | Services</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="futuristic-services">
+
+<!-- FLOATING BACKGROUND GLOW LAYERS -->
+<div class="bg-orbs"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="left-header">
+    <div class="logo">
+      <img src="Images/Media.JFIF" alt="Logo">
+    </div>
+    <h1>Crafted Creations</h1>
+  </div>
+
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<section class="hero-glow">
+  <h2>CRAFTED SERVICES SYSTEM</h2>
+  <p>Handmade intelligence powered by creativity, precision & design evolution</p>
+</section>
+
+<!-- SERVICES GRID -->
+<!-- SERVICES GRID -->
+<section class="glass-grid">
+
+  <div class="glass-card" onclick="openModal('Custom Crafts')">
+    <img src="Images/artistic crafts.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Custom Crafts</h3>
+      <p>Tailored creations built uniquely for you</p>
+      <h4 class="price">BWP 250</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Modern Artistic')">
+    <img src="Images/artistic.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Modern Artistic</h3>
+      <p>Futuristic creative design expressions</p>
+      <h4 class="price">BWP 320</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Color Evolution')">
+    <img src="Images/colourful creations.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Color Evolution</h3>
+      <p>Vibrant energy-driven craft systems</p>
+      <h4 class="price">BWP 280</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Decor Intelligence')">
+    <img src="Images/decor pieces.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Decor Intelligence</h3>
+      <p>Smart aesthetic environment design</p>
+      <h4 class="price">BWP 450</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Creative Core')">
+    <img src="Images/creative design.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Creative Core</h3>
+      <p>Raw imagination converted into design</p>
+      <h4 class="price">BWP 350</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Weaving Matrix')">
+    <img src="Images/weaving art.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Weaving Matrix</h3>
+      <p>Traditional craft upgraded to modern form</p>
+      <h4 class="price">BWP 500</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Premium Weaves')">
+    <img src="Images/premium weaves.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Premium Weaves</h3>
+      <p>High-level woven craftsmanship system</p>
+      <h4 class="price">BWP 650</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Gift Protocol')">
+    <img src="Images/handmade gift.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Gift Protocol</h3>
+      <p>Emotion-based handcrafted gifting</p>
+      <h4 class="price">BWP 300</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Crafted Coils Collection')">
+    <img src="Images/w.art.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Crafted Coils Collection</h3>
+      <p>Art that tells a story</p>
+      <h4 class="price">BWP 420</h4>
+    </div>
+  </div>
+
+  <div class="glass-card" onclick="openModal('Custom Orders')">
+    <img src="Images/WhatsApp Image 2026-04-20 at 20.31.56.jpeg" alt="Custom handmade crafts" width="300" height="200">
+    <div class="glass-text">
+      <h3>Custom Orders</h3>
+      <p>Bold culture on your walls</p>
+      <h4 class="price">BWP 550</h4>
+    </div>
+  </div>
+
+</section>
+<!-- HOLOGRAPHIC MODAL -->
+<div class="modal" id="modal">
+  <div class="holo-panel">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="title"></h2>
+    <p id="desc"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Crafted Creations | Designed Beyond Reality</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<script>
+function openModal(service){
+  const modal = document.getElementById('modal');
+  const title = document.getElementById('title');
+  const desc = document.getElementById('desc');
+
+  const data = {
+    "Custom Crafts":"AI-assisted handcrafted personalization system.",
+    "Modern Artistic":"Next-generation creative design language.",
+    "Color Evolution":"Dynamic visual energy crafting system.",
+    "Decor Intelligence":"Smart environmental aesthetic engineering.",
+    "Creative Core":"Pure imagination conversion engine.",
+    "Weaving Matrix":"Advanced textile artistry system.",
+    "Premium Fabric System":"High-grade woven material architecture.",
+    "Gift Protocol":"Emotion-driven handmade gift design system."
+  };
+
+  title.textContent = service;
+  desc.textContent = data[service];
+
+  modal.classList.add('show');
+}
+
+function closeModal(){
+  document.getElementById('modal').classList.remove('show');
+}
+</script>
+
+</body>
+</html>

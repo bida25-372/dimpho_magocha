@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Crafted Creations | Home</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.hero h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+header {
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  flex-wrap: wrap;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  section {
+    padding: 50px 25px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* HEADER STACK */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-header {
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  /* NAVIGATION */
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 15px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url('Images/premium weaves.jpeg') no-repeat center center/cover;
+  color: #333;
+}
+
+.overlay {
+  background: rgba(255,255,255,0.85);
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.85);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* TITLE */
+header h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 15px;
+  flex: 1;
+}
+
+/* NAV */
+.nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: #f4a261;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #f4a261;
+}
+
+/* GROUP LOGO + TITLE */
+.left-header {
+  display: flex;
+  align-items: center;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<!-- HEADER -->
+<header>
+  <div class="left-header">
+    <div class="logo">
+      <img src="Images/Media.JFIF" alt="Logo">
+    </div>
+    <h1>Crafted Creations</h1>
+  </div>
+
+  <ul class="nav-list">
+       <li><a href="index.html"class="active">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<!-- GALLERY -->
+<section>
+  <h2 class="section-title">Our Crafts Collection</h2>
+  <div class="gallery">
+
+    <div class="card">
+      <img src="Images/artistic crafts.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Creative Designs</h3>
+        <p>Unique handmade designs crafted with attention to detail, bringing beauty and originality into every piece.</p>
+        <h4 class="price">BWP 250</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/artistic.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Artistic Crafts</h3>
+        <p>Explore artistic handmade crafts that combine creativity and culture into meaningful pieces.</p>
+        <h4 class="price">BWP 320</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/colourful creations.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Colorful Creations</h3>
+        <p>Bright and colorful craft items designed to bring joy and warmth to your home or workspace.</p>
+        <h4 class="price">BWP 280</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/decor pieces.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Decor Pieces</h3>
+        <p>Beautiful decorative crafts perfect for enhancing your living space with a handmade touch.</p>
+        <h4 class="price">BWP 400</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/creative design.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Modern Crafts</h3>
+        <p>Modern-style handmade items blending tradition and contemporary design.</p>
+        <h4 class="price">BWP 350</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/weaving art.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Weaving Art</h3>
+        <p>Traditional weaving techniques transformed into stunning artistic creations.</p>
+        <h4 class="price">BWP 450</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/premium weaves.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Premium Weaves</h3>
+        <p>High-quality woven crafts made with skill, patience, and dedication.</p>
+        <h4 class="price">BWP 550</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/handmade gift.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Handmade Gifts</h3>
+        <p>Perfect handcrafted gift ideas for your loved ones, full of creativity and meaning.</p>
+        <h4 class="price">BWP 300</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/modern.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Modern Handmade</h3>
+        <p>Stylish modern handmade creations designed with elegance and creativity.</p>
+        <h4 class="price">BWP 380</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/creative d.jpeg" alt="Creative handmade craft" width="300" height="200">
+      <div class="card-content">
+        <h3>Creative Collection</h3>
+        <p>Creative handcrafted pieces designed to inspire beauty and uniqueness.</p>
+        <h4 class="price">BWP 420</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2 class="section-title">About Our Crafts</h2>
+  <div class="about">
+    <p>
+      Our homemade crafts are created with passion, creativity, and dedication.
+      Each piece tells a story and reflects the beauty of handmade artistry.
+      From woven materials to decorative items, we aim to provide unique products
+      that stand out and bring warmth into your life.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Crafted Creations | Designed Beyond Reality</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+</div>
+</body><div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</html>

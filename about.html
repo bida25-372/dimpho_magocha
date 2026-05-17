@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crafted Creations | About</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🌄 WALLPAPER */
+body {
+  background: url('Images/premium weaves.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 🌑 OVERLAY (keeps wallpaper visible) */
+.overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* HEADER (glass style) */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  color: #f4a261;
+}
+
+/* NAV */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 25px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list .active {
+  color: #f4a261;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+}
+
+/* LEFT */
+.hero-left {
+  background: rgba(244, 162, 97, 0.85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* RIGHT */
+.hero-right {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #fff;
+}
+
+/* PROFILE */
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f4a261;
+  margin-bottom: 20px;
+}
+
+/* GALLERY */
+.section {
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.08);
+}
+
+.gallery-item p {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #eee;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<!-- HEADER -->
+<header>
+  <div class="left-header">
+    <h2>Crafted Creations</h2>
+  </div>
+
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-left">
+    <div>
+      <h1>Crafting Stories Through Art</h1>
+      <p>Each creation tells a unique story inspired by culture, passion, and creativity.</p>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="Images/profile.jpg" class="profile-img">
+    <p>
+      I am a dedicated artisan who transforms everyday materials into meaningful handcrafted pieces.
+      My work is inspired by tradition, creativity, and passion.
+    </p>
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2>Our Craft Gallery</h2>
+
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="Images/artistic crafts.jpeg"alt="Handwoven craft" width="300" height="200">
+      <p>Traditional handwoven masterpiece.</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="Images/artistic.jpeg"alt="Handwoven craft" width="300" height="200">
+      <p>Modern creative handcrafted design.</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="Images/weaving art.jpeg"alt="Handwoven craft" width="300" height="200">
+      <p>Skillful weaving craftsmanship.</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="Images/decor pieces.jpeg"alt="Handwoven craft" width="300" height="200">
+      <p>Elegant cultural-inspired art.</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="Images/premium weaves.jpeg"alt="Handwoven craft" width="300" height="200">
+      <p>High-detail weaving work.</p>
+    </div>
+
+
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+  <h2>Why Choose Us</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Unique Designs</h3>
+      <p>Every piece is one of a kind.</p>
+    </div>
+
+    <div class="card">
+      <h3>Handmade Quality</h3>
+      <p>Crafted with care and precision.</p>
+    </div>
+
+    <div class="card">
+      <h3>Authentic Style</h3>
+      <p>Inspired by culture and creativity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Crafted Creations | Designed Beyond Reality</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
